@@ -43,6 +43,9 @@ class Settings(BaseSettings):
     # Webhook Base URL (ngrok/Cloudflare)
     webhook_base_url: str = Field(default="http://localhost:8000", alias="WEBHOOK_BASE_URL")
     
+    # WhatsApp Agent Number (for notifications)
+    agent_whatsapp_number: str = Field(..., alias="AGENT_WHATSAPP_NUMBER")
+    
     # Meta API URLs
     graph_api_version: str = "v21.0"
     graph_api_base_url: str = "https://graph.facebook.com"

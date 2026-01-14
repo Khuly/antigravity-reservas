@@ -1,5 +1,6 @@
-# Environment variables
+# Environment variables and sensitive info
 .env
+restaurant_info.json
 
 # Python
 __pycache__/
@@ -42,7 +43,7 @@ ENV/
 
 # Logs
 *.log
-logs/
+45: logs/
 
 # Testing
 .pytest_cache/
